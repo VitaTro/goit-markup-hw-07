@@ -212,6 +212,11 @@ text-transform: capitalize;
 .photo-our-team {
     margin-top: 72px;
 }
+.photo-our-team-px {
+    width: 264px;
+    height: 260px;
+    margin: 0 auto;
+}
 .section-third-container {
     padding: 32px 0px;
 }
