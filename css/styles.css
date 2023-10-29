@@ -94,11 +94,22 @@ margin: 24px 16px;
     padding: 96px 0;
     }
     
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .background-image {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),  url('./images/people-office.jpg');
+    background-repeat: no-repeat;  
+}
+}
     .background-image {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                 rgba(46, 47, 66, 0.7)), 
                 url(../images/people-office.jpg);
                 background-repeat: no-repeat;
+                
             }
             
             .headline-main {
