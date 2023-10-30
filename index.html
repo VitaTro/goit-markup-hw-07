@@ -36,7 +36,7 @@ height: 200rem;
     <header class="page-header">
         <div class="logo-header">
             <a href="./index.html" class="web-studio link">Web<span class="studio">Studio</span></a> 
-       <svg class="svg-header-menu" width="32" height="22">
+       <svg data-modal-open class="svg-header-menu" width="32" height="22">
         <use href="./images/icons.svg#icon-menu"></use>
        </svg>
 </div>
@@ -44,7 +44,7 @@ height: 200rem;
      
         <main>
             <section class=" section background-image">
-                <div">
+                <div>
                 <h1 class="headline-main">Effective Solutions for Your Business</h1>
                 <button data-modal-open type="button headline-main-button" class="button">Order Service</button>
                 </div>
@@ -381,6 +381,8 @@ sizes="264px"
             </div>
         </div>
         </footer>
+
+
        <div class=" modal  is-hidden" data-modal>
         <div class="modal-windows">
                 <button type="button" class="modal-windows-close" data-modal-close>
@@ -436,6 +438,32 @@ sizes="264px"
             </form>
         </div>
         </div>
+
+
+        <div class=" modal  is-hidden" data-modal>
+<div class="modal-menu">
+    <button type="button" class="modal-menu-close" data-modal-close>
+                    <svg class="modal-svg" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul>
+                    <li><a class="" href="./index.html">Studio</a></li>
+                    <li><a class="" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="" href="">Contacts</a></li>
+                </ul>
+                <address>
+                    <ul>
+                        <li><a class="" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        </ul>
+                </address>
+</div>
+                            
+                    
+        </div>
+
+
 <script src="./js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
 </body>
