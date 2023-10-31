@@ -1688,6 +1688,10 @@ background-color: var(--moderate-blue-color);
     letter-spacing: 0.03em;
     line-height: 1.17;
     }
+.svg-header-menu{
+    display: none;
+    
+}
 
 }
  
