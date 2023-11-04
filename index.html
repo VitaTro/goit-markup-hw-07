@@ -35,7 +35,9 @@ height: 200rem;
 <body>
 
     <header class="page-header">
+       
         <div class="container container-header">
+            
         <nav class="link list container-nav">
             <a href="./index.html" class="web-studio link logo">Web<span class="studio">Studio</span></a>
             </nav>
@@ -53,13 +55,16 @@ height: 200rem;
       <li>  <a class="contact list link  " href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
-    
-    <svg class="svg-header-menu menu" width="32" height="22" >
-                <use href="./images/icons.svg#icon-menu"> 
-                    
-                </use>
-            </svg>
+    <div class="menu">
+    <button  class="svg-header-menu js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"> 
 
+    <svg  width="32" height="22" >
+                <use href="./images/icons.svg#icon-menu">
+                </use>
+            </svg></button>
+</div>
 </div>
     </header>
     
@@ -469,7 +474,35 @@ height: 200rem;
         </div>
         </div>
 
+        <div class="modal-menu js-menu-container" id="mobile-menu">
+            
+                <button  class="menu js-close-menu">
+                    <svg class="modal-svg" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+           
+            <ul class="list container-menu">
+                <li><a class="header-nav link container-menu-link" href="./index.html">Studio</a>
+                </li>
+                <li><a class="header-nav link"  href="./portfolio.html">Portfolio</a> </li>
+                <li><a class="header-nav link" href="">Contacts</a> </li>
+            </ul>
+        
+        <address class="address list">
+         <ul class="link list contact container-address">
+        <li> <a class="contact list link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li>  <a class="contact list link  " href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        </ul>
+        </address>
+        </div>
 
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 <script src="./js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
 </body>
