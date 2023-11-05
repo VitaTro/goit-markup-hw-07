@@ -96,10 +96,11 @@ margin: 0 auto;
       display: none;
     }
   }
+
   /* =========================MOBILE==================== */
 
  
- @media screen and (max-width: 767px) {
+ @media screen and (min-width: 480px) {
      /* ============================header=========================== */
     .page-header {
         height: 70px;
@@ -123,6 +124,7 @@ flex-shrink: 0;
   .container-nav {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     .logo {
         margin-right: 76px;
@@ -783,7 +785,7 @@ fill:var(--cloud-color);
 .links {
     color: var(--iris-color);
 }
-.page-header .container {
+.menu-container {
     min-height: 80px;
     display: inline-flex;
     align-items: center;
