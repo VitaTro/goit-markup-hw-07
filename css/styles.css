@@ -133,6 +133,20 @@ margin: 0 auto;
         display: none;
        }
   }
+  .background-image {
+    width: 428px;
+    height: 432px;
+    flex-shrink: 0; 
+    margin:0 auto;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+            rgba(46, 47, 66, 0.7)), 
+            url(../images/people-office.jpg);
+            background-repeat: no-repeat;
+            max-width: 767px; 
+            background-position: center;
+            background-size: cover;
+        }
+        
 
   /* =========================MOBILE==================== */
 
@@ -208,9 +222,9 @@ flex-shrink: 0;
             margin:0 auto;
                     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                     rgba(46, 47, 66, 0.7)), 
-                    url(../images/mobile.jpg);
+                    url(../images/people-office.jpg);
                     background-repeat: no-repeat;
-                    max-width: 1440px; 
+                    max-width: 767px; 
                     background-position: center;
                     background-size: cover;
                 }
@@ -220,7 +234,7 @@ flex-shrink: 0;
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                 img {
-                  background-image: url('mobile@2x.jpg');
+                  background-image: url('../images/people-office.jpg@2x');
                 }
               }
                 .headline-main {
@@ -1050,7 +1064,7 @@ font-size: 12px;
                 rgba(46, 47, 66, 0.7)), 
                 url(../images/tablet.jpg);
                 background-repeat: no-repeat;
-                max-width: 1440px; 
+                max-width: 1157px; 
                 background-position: center;
                 background-size: cover;
             }
@@ -1677,7 +1691,7 @@ fill:var(--cloud-color);
             rgba(46, 47, 66, 0.7)), 
             url(../images/people-office.jpg);
             background-repeat: no-repeat;
-            max-width: 1440px; 
+            min-width: 1158px; 
             background-position: center;
             background-size: cover;
         }
