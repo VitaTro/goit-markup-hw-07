@@ -8,7 +8,7 @@
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="title">hw-07 main page</title>
@@ -21,32 +21,52 @@
         color:var(--slate-color);
        background-color:var(--white-color); 
        line-height: 1.5;
-height: 129.75rem;   
+height: 129.75rem; 
+min-width: 320px;  
 }
+.is-hidden {
+        opacity:0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 </style>
 </head>
 
 <body>
     <header class="page-header">
+       
         <div class="container container-header">
+            
         <nav class="link list container-nav">
             <a href="./index.html" class="web-studio link logo">Web<span class="studio">Studio</span></a>
+           
+           
             <ul class="list container-menu">
-                <li><a class="header-nav link" href="./index.html">Studio</a></li>
-                <li><a class="header-nav link container-menu-link"  href="./portfolio.html">Portfolio</a>
-                    
-                 </li>
-                <li><a class="header-nav link"  href="">Contacts</a> </li>
+                <li><a class="header-nav link container-menu-link" href="./index.html">Studio</a>
+                </li>
+                <li><a class="header-nav link"  href="./portfolio.html">Portfolio</a> </li>
+                <li><a class="header-nav link" href="">Contacts</a> </li>
             </ul>
-        </nav>
+        
         <address class="address list">
          <ul class="link list contact container-address">
        <li> <a class="contact list link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li>  <a class="contact list link " href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <li>  <a class="contact list link  " href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
+    <div class="header-menu">
+    <button  class="menu-toggle js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"> 
+
+    <svg  width="32" height="22" >
+                <use href="./images/icons.svg#icon-menu">
+                </use>
+            </svg></button> 
+</div></nav>
 </div>
     </header>
+    
     <main>
         <Section class="portfolio-section">
             <div class="container">
@@ -72,7 +92,7 @@ height: 129.75rem;
             <li class="list link portfolio-image-list">
      <a class="list link portfolio-image-list-link" href="">      
 <div class="container-animation"> 
-    <img src="./images/img21.jpg" 
+    <img src="./images/img21.jpg" class="portfolio-mobile"
     alt="BankApp in the phone with an active interface" 
     width="360" 
     height="300"/>
@@ -90,7 +110,7 @@ height: 129.75rem;
     <li class="list link portfolio-image-list">
         <a class="list link portfolio-image-list-link" href="">
             <div class="container-animation">
-                 <img src="./images/img22.jpg" 
+                 <img src="./images/img22.jpg" class="portfolio-mobile"
         alt="Payment of the bill at the terminal via QR code" 
         width="360" 
         height="300"/>
@@ -107,7 +127,10 @@ height: 129.75rem;
         <li class="list link portfolio-image-list"> 
             <a class="list link portfolio-image-list-link" href="">
                 <div class="container-animation">
-                     <img src="./images/img23.jpg" alt="The same work app for your laptop and phone NORMALCY" width="360" height="300"/>
+                     <img src="./images/img23.jpg" class="portfolio-mobile"
+                     alt="The same work app for your laptop and phone NORMALCY"
+                      width="360" 
+                     height="300"/>
                     <p class="container-animation-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>                
         </div>
                 <div class="portfolio-image"> 
@@ -119,7 +142,10 @@ height: 129.75rem;
             <li class="list link portfolio-image-list">
                 <a class="list link portfolio-image-list-link" href="">
                     <div class="container-animation">
-                         <img src="./images/img24.jpg"  alt="A taxi driver driving to his destination" width="360" height="300"/>
+                         <img src="./images/img24.jpg"  class="portfolio-mobile"
+                         alt="A taxi driver driving to his destination" 
+                         width="360" 
+                         height="300"/>
                         <p class="container-animation-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                         
             </div>
@@ -132,7 +158,10 @@ height: 129.75rem;
                 <li class="list link portfolio-image-list">
                     <a class="list link portfolio-image-list-link" href="">
                         <div class="container-animation">
-                            <img src="./images/img25.jpg" alt="Phone theme in the form of a fantasy moon" width="360" height="300"/>
+                            <img src="./images/img25.jpg" class="portfolio-mobile"
+                            alt="Phone theme in the form of a fantasy moon" 
+                            width="360" 
+                            height="300"/>
                             <p class="container-animation-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                </div> 
                                         <div class="portfolio-image">
@@ -143,8 +172,10 @@ height: 129.75rem;
                    <li class="list link portfolio-image-list"> 
                     <a class="list link portfolio-image-list-link" href="">
                         <div class="container-animation">
-                            <img src="./images/img26.jpg" alt="Girl in gray hat in 
-                    sunglasses and orange sweater listening to music" width="360" height="300"/>
+                            <img src="./images/img26.jpg" class="portfolio-mobile"
+                            alt="Girl in gray hat in sunglasses and orange sweater listening to music" 
+                            width="360" 
+                            height="300"/>
                             <p class="container-animation-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                    </div>  
                     <div class="portfolio-image">
@@ -156,7 +187,10 @@ height: 129.75rem;
                        <li class="list link portfolio-image-list">
                         <a class="list link portfolio-image-list-link" href="">
                             <div class="container-animation">
-                                <img src="./images/img27.jpg" alt="Smart Home Control in Phone App" width="360" height="300"/>
+                                <img src="./images/img27.jpg" class="portfolio-mobile"
+                                alt="Smart Home Control in Phone App" 
+                                width="360" 
+                                height="300"/>
                                 <p class="container-animation-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>               
                         </div> 
                             <div class="portfolio-image">
@@ -168,7 +202,10 @@ height: 129.75rem;
                         <li class="list link portfolio-image-list">
                             <a class="list link portfolio-image-list-link" href="">
                                 <div class="container-animation">
-                                   <img src="./images/img28.jpg" alt="A girl in a striped light suit carries a wicker bag with vegetables" width="360" height="300"/>
+                                   <img src="./images/img28.jpg" class="portfolio-mobile"
+                                   alt="A girl in a striped light suit carries a wicker bag with vegetables" 
+                                   width="360" 
+                                   height="300"/>
                                     <p class="container-animation-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div> 
                                  <div class="portfolio-image">
@@ -180,7 +217,10 @@ height: 129.75rem;
                                 <li class="list link portfolio-image-list">
                                     <a class="list link portfolio-image-list-link" href="">
                                         <div class="container-animation">
-                                            <img src="./images/img29.jpg" alt="Barista makes a patterned cappuccino" width="360" height="300" />
+                                            <img src="./images/img29.jpg" class="portfolio-mobile"
+                                            alt="Barista makes a patterned cappuccino" 
+                                            width="360" 
+                                            height="300" />
                                             <p class="container-animation-p">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                                 </div> 
                                    <div class="portfolio-image">
@@ -257,6 +297,65 @@ class="subscribe-mail" required/></label>
         </div>
     </div>
     </footer>
- 
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+            
+        <button  class="modal-menu-svg js-close-menu">
+            <svg class="modal-svg" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+   <div class="container-menu-list">
+    <ul class="mobile-menu">
+        <li><a class="links" href="./index.html">Studio</a></li>
+        <li><a class="links links-active" href="./portfolio.html">Portfolio</a> </li>
+        <li><a class="links" href="">Contacts</a> </li>
+    </ul>
+
+
+<ul class="mobile-menu contact-menu">
+  <li>  <a class="phone-menu" href="tel:+110001111111">+11 (000) 111-11-11</a></li>  
+<li> <a class="address-menu" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+</ul>
+<ul class="list social-page icon-menu">
+    <li class="svg-icons">
+        <a class="svg-icon-links-team" href="#">    
+            <svg class="social-section-team" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+    </li>
+    <li class="svg-icons">
+        <a class="svg-icon-links-team" href="#">    
+            <svg class="social-section-team" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+         </a>
+    </li>
+    <li class="svg-icons">
+        <a class="svg-icon-links-team" href="#">
+            <svg class="social-section-team" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+         </a>
+     </li>
+    <li class="svg-icons">
+        <a class="svg-icon-links-team" href="#">    
+            <svg class="social-section-team" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+    </li>
+</ul>
+</div>
+</div>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
