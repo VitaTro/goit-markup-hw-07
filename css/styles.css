@@ -144,7 +144,7 @@ margin: 0 auto;
        }
   }
   .background-image {
-    width: 428px;
+    max-width: 1440px;
     height: 432px;
     flex-shrink: 0; 
     margin:0 auto;
@@ -223,18 +223,18 @@ a.container-menu-link {
     }
     
      .section-first {
-        width: 320px;
+       
     }
     .background-image {
-       width: 100%;
+        max-width: 1440px;
         height: 432px;
         flex-shrink: 0; 
         margin:0 auto;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                 rgba(46, 47, 66, 0.7)), 
-                url(../images/people-office.jpg);
+                url(../images/mobile.jpg);
                 background-repeat: no-repeat;
-                max-width: 767px; 
+                
                 background-position: center;
                 background-size: cover;
             }
@@ -246,7 +246,7 @@ a.container-menu-link {
                 .background-image {
               background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
               rgba(46, 47, 66, 0.7)), 
-               url('../images/people-office2x.jpg');
+               url('../images/mobile2x.jpg');
             }
           }
             .headline-main {
@@ -258,14 +258,14 @@ a.container-menu-link {
                 text-align: center;
                 letter-spacing: 0.72px;
                 text-transform: capitalize;
-              margin:0 auto;
+              margin:0 auto 72px;
                display: block;
              width: 320px;
               
             }
 
             .button {
-                display: inline-flex;
+                display: flex;
 padding: 16px 32px;
 gap: 10px;
 color:var(--white-color);
@@ -276,8 +276,8 @@ font-size: 16px;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.64px;
-margin-top: 72px;
-margin-left: 75px;
+
+margin: 0 auto;
 
 justify-content: center;
             }
@@ -1040,18 +1040,18 @@ flex-shrink: 0;
         }
         
          .section-first {
-            width: 320px;
+            
         }
         .background-image {
-           width: 100%;
+            max-width: 1440px;
             height: 432px;
             flex-shrink: 0; 
             margin:0 auto;
                     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                     rgba(46, 47, 66, 0.7)), 
-                    url(../images/people-office.jpg);
+                    url(../images/mobile.jpg);
                     background-repeat: no-repeat;
-                    max-width: 767px; 
+                    
                     background-position: center;
                     background-size: cover;
                 }
@@ -1063,7 +1063,7 @@ flex-shrink: 0;
                     .background-image {
                   background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                   rgba(46, 47, 66, 0.7)), 
-                   url('../images/people-office2x.jpg');
+                   url('../images/mobile2x.jpg');
                 }
               }
                 .headline-main {
@@ -1075,16 +1075,15 @@ flex-shrink: 0;
                     text-align: center;
                     letter-spacing: 0.72px;
                     text-transform: capitalize;
-                  margin:0 auto;
                    display: block;
                  width: 320px;
+                 margin: 0 auto 72px;
                   
                 }
 
                 .button {
-                    display: inline-flex;
+                    display: flex;
     padding: 16px 32px;
-    gap: 10px;
     color:var(--white-color);
     background: var(--iris-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -1093,8 +1092,8 @@ flex-shrink: 0;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.64px;
-    margin-top: 72px;
-    margin-left: 129px;
+    margin: 0 auto;
+    
 
 justify-content: center;
                 }
@@ -1893,15 +1892,15 @@ font-size: 12px;
    
     }
     .background-image {
-       width: 100%;
+        max-width: 1440px;
         height: 436px;
         flex-shrink: 0; 
         margin:0 auto;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                 rgba(46, 47, 66, 0.7)), 
-                url(../images/people-office.jpg);
+                url(../images/tablet.jpg);
                 background-repeat: no-repeat;
-                max-width: 1157px; 
+                
                 background-position: center;
                 background-size: cover;
             }
@@ -1912,7 +1911,7 @@ font-size: 12px;
                 .background-image {
               background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
               rgba(46, 47, 66, 0.7)), 
-               url('../images/people-office2x.jpg');
+               url('../images/tablet2x.jpg');
             }
           }
             .headline-main {
@@ -1924,8 +1923,7 @@ font-size: 12px;
                 text-align: center;
                 letter-spacing: 1.12px;
                 text-transform: capitalize;
-               margin-left: 136px;
-               margin-right: 136px;
+               margin: 0 auto 36px;
                display: block;
                width: 496px;
             }
@@ -1943,7 +1941,6 @@ font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.64px;
 font-style: normal;
-margin-top: 36px;
 margin-left: 300px;
 align-items: flex-start;
             }
@@ -2532,7 +2529,7 @@ fill:var(--cloud-color);
   
 
 .background-image {
-    width: 100%;
+    max-width: 1440px;
     height: 600px;
     flex-shrink: 0;
     margin:0 auto;
@@ -2540,7 +2537,7 @@ fill:var(--cloud-color);
             rgba(46, 47, 66, 0.7)), 
             url(../images/people-office.jpg);
             background-repeat: no-repeat;
-            min-width: 1158px; 
+           
             background-position: center;
             background-size: cover;
         }
@@ -2780,10 +2777,10 @@ flex-shrink: 0;
         font-weight: 700;
         font-style: normal;
         font-size: 56px;
-        line-height: 1.07;
+        line-height: 60px;
         text-align: center;
-        letter-spacing: 0.02em;
-        max-width: 496px;
+        letter-spacing: 1.12px;
+        width: 496px;
         margin: 0 auto 48px;
     }
     .headline-main-button {
